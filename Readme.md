@@ -2,7 +2,6 @@
 
 * Студент: [Женя Землянский](https://up.htmlacademy.ru/htmlcss/32/user/1541069).
 * Наставник: `Михаил Поданев` (https://htmlacademy.ru/profile/mpodanev).
-https://htmlacademy.ru/profile/mpodanev
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
