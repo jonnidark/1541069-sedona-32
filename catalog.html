@@ -32,10 +32,51 @@
       <img src="#" alt="Размытй фон горы">
       <h1>Гостиницы Седоны</h1>
       <ul>
-        <li>Инфраструктура:</li>
-        <li>Тип жилья:</li>
-        <li>Стоимость,₽:</li>
+        <li>
+          <h2>Инфраструктура:</h2>
+          <form>
+            <p>
+              <input type="checkbox" name="Бассейн" />Бассейн
+            </p>
+            <p>
+              <input type="checkbox" name="Парковка" />Парковка
+            </p>
+            <p>
+              <input type="checkbox" name="Wi-Fi" />Wi-Fi
+            </p>
+          </form>
+        </li>
+        <li>
+          <h2>Тип жилья:</h2>
+          <form>
+            <p>
+              <input type="radio" value="Гостиницы" checked name="Гостиницы" />Гостиницы
+            </p>
+            <p>
+              <input type="radio" value="Мотель" checked name="Мотель" />Мотел
+            </p>
+            <p>
+              <input type="radio" value="Апартаменты" checked name="Апартаменты" />Апартаменты
+            </p>
+          </form>
+        </li>
+        <li>
+          <h2> Стоимость,₽:</h2>
+          <form action="https://htmlacademy.ru" method="get">
+            <label>
+              <input type="number" name="min-price" value="0">
+            </label>
+          </form>
+          <form action="https://htmlacademy.ru" method="get">
+            <label>
+              <input type="number" name="min-price" value="9000">
+            </label>
+          </form>
+          <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
+        </li>
       </ul>
+      <button type="submit">Применить</button>
+      <button type="submit">Сбросить</button>
     </section>
     <section>
       <h2>Найдено гостиниц:38</h2>
@@ -57,6 +98,19 @@
           <img src="#" alt="Отель Гринтрии">
         </li>
       </ul>
+      <button type="submit">Загрузить ещё</button>
+      <button type="submit">1</button>
+      <button type="submit">2</button>
+      <button type="submit">3</button>
+      <button type="submit">4</button>
+      <button type="submit">...</button>
+      <button type="submit">10</button>
+      <p>Гостиниц на странице</p>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <label class="catalog-filter-label">
+          Гостиниц на странице<input type="number" name="min-price" value="4">
+        </label>
+      </form>
     </section>
   </main>
   <footer>
