@@ -9,6 +9,7 @@
 <body>
   <header>
     <nav>
+      <a class="navigation-logo" href="index.html"></a>
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">О седоне</a></li>
@@ -29,57 +30,76 @@
   </header>
   <main>
     <section>
-      <img src="#" alt="Размытй фон горы">
       <h1>Гостиницы Седоны</h1>
+      <h2>Инфраструктура:</h2>
       <ul>
         <li>
-          <h2>Инфраструктура:</h2>
-          <form>
-            <p>
-              <input type="checkbox" name="Бассейн" />Бассейн
-            </p>
-            <p>
-              <input type="checkbox" name="Парковка" />Парковка
-            </p>
-            <p>
-              <input type="checkbox" name="Wi-Fi" />Wi-Fi
-            </p>
-          </form>
+          <label>
+            <input type="checkbox" name="bed-head-for-men">
+            <span>Бассейн</span>
+          </label>
         </li>
         <li>
-          <h2>Тип жилья:</h2>
-          <form>
-            <p>
-              <input type="radio" value="Гостиницы" checked name="Гостиницы" />Гостиницы
-            </p>
-            <p>
-              <input type="radio" value="Мотель" checked name="Мотель" />Мотел
-            </p>
-            <p>
-              <input type="radio" value="Апартаменты" checked name="Апартаменты" />Апартаменты
-            </p>
-          </form>
+          <label>
+            <input type="checkbox" name="bed-head-for-men">
+            <span>Парковка</span>
+          </label>
         </li>
         <li>
-          <h2> Стоимость,₽:</h2>
-          <form action="https://htmlacademy.ru" method="get">
-            <label>
-              <input type="number" name="min-price" value="0">
-            </label>
-          </form>
-          <form action="https://htmlacademy.ru" method="get">
-            <label>
-              <input type="number" name="min-price" value="9000">
-            </label>
-          </form>
-          <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
+          <label>
+            <input type="checkbox" name="bed-head-for-men">
+            <span>Wi-Fi</span>
+          </label>
         </li>
       </ul>
-      <button type="submit">Применить</button>
-      <button type="submit">Сбросить</button>
+      <h2>Тип жилья:</h2>
+      <ul>
+        <li>
+          <label>
+            <input type="radio" name="bed-head-for-men">
+            <span>Гостиницы</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="bed-head-for-men">
+            <span>Мотель</span>
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="bed-head-for-men">
+            <span>Апартаменты</span>
+          </label>
+        </li>
+      </ul>
+      <h2> Стоимость,₽:</h2>
+      <form action="https://htmlacademy.ru" method="get">
+        <label>
+          <input type="number" name="min-price" value="0">
+        </label>
+      </form>
+      <form action="https://htmlacademy.ru" method="get">
+        <label>
+          <input type="number" name="min-price" value="9000">
+        </label>
+      </form>
+      <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
+      <button type="button">Применить</button>
+      <button type="button">Сбросить</button>
     </section>
     <section>
       <h2>Найдено гостиниц:38</h2>
+      <select name="sorting">
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="popular">Сначала популярное</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
+      <div>
+        <button type="submit">1</button>
+        <button type="submit">2</button>
+        <button type="submit">3</button>
+      </div>
       <ul>
         <li>
           <h3>Amara Resort & Spa</h3>
@@ -98,18 +118,36 @@
           <img src="#" alt="Отель Гринтрии">
         </li>
       </ul>
-      <button type="submit">Загрузить ещё</button>
-      <button type="submit">1</button>
-      <button type="submit">2</button>
-      <button type="submit">3</button>
-      <button type="submit">4</button>
-      <button type="submit">...</button>
-      <button type="submit">10</button>
-      <p>Гостиниц на странице</p>
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <label class="catalog-filter-label">
-          Гостиниц на странице<input type="number" name="min-price" value="4">
-        </label>
+      <div>
+        <ul>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">...</a>
+          </li>
+          <li>
+            <a href="#">10</a>
+          </li>
+        </ul>
+      </div>
+      <form>
+        <label>Гостиниц на странице:</label>
+        <select name="sorting">
+          <option value="number">1</option>
+          <option value="number">2</option>
+          <option value="number">3</option>
+          <option value="number">4</option>
+        </select>
       </form>
     </section>
   </main>
@@ -118,9 +156,9 @@
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
       <form action="https://htmlacademy.ru" method="post">
-        <input type="email" value="Ваш e-mail" />
+        <input type="email" placeholder="Ваш e-mail" />
+        <button type="submit">подписаться</button>
       </form>
-      <button type="submit">подписаться</button>
     </section>
     <section>
       <h2>соц-сети</h2>
