@@ -9,7 +9,9 @@
 <body>
   <header>
     <nav>
-      <a class="navigation-logo" href="index.html"></a>
+      <a href="index.html">
+        <img src="#" alt="логотип Седона">
+      </a>
       <ul>
         <li><a href="#">Главная</a></li>
         <li><a href="#">О седоне</a></li>
@@ -32,61 +34,72 @@
     <section>
       <h1>Гостиницы Седоны</h1>
       <h2>Инфраструктура:</h2>
-      <ul>
-        <li>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="Pool" checked>
+                <span>Бассейн</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Parking" checked>
+                <span>Парковка</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="Internet">
+                <span>Wi-Fi</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li>
+              <label>
+                <input value="Hotels" type="radio" name="lodging" checked>
+                <span>Гостиницы</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input value="Motel" type="radio" name="lodging">
+                <span>Мотель</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input value="Apartments" type="radio" name="lodging">
+                <span>Апартаменты</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость,₽:</legend>
           <label>
-            <input type="checkbox" name="bed-head-for-men">
-            <span>Бассейн</span>
+            <input type="number" name="number" value="0">
           </label>
-        </li>
-        <li>
           <label>
-            <input type="checkbox" name="bed-head-for-men">
-            <span>Парковка</span>
+            <input type="number" name="number" value="9000">
           </label>
-        </li>
-        <li>
           <label>
-            <input type="checkbox" name="bed-head-for-men">
-            <span>Wi-Fi</span>
+            <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
           </label>
-        </li>
-      </ul>
-      <h2>Тип жилья:</h2>
-      <ul>
-        <li>
-          <label>
-            <input type="radio" name="bed-head-for-men">
-            <span>Гостиницы</span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio" name="bed-head-for-men">
-            <span>Мотель</span>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio" name="bed-head-for-men">
-            <span>Апартаменты</span>
-          </label>
-        </li>
-      </ul>
-      <h2> Стоимость,₽:</h2>
-      <form action="https://htmlacademy.ru" method="get">
-        <label>
-          <input type="number" name="min-price" value="0">
-        </label>
+          <button type="submit">
+            <span> Применить</span>
+          </button>
+          <button type="submit">
+            <span>Сбросить</span>
+          </button>
+        </fieldset>
       </form>
-      <form action="https://htmlacademy.ru" method="get">
-        <label>
-          <input type="number" name="min-price" value="9000">
-        </label>
-      </form>
-      <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
-      <button type="button">Применить</button>
-      <button type="button">Сбросить</button>
     </section>
     <section>
       <h2>Найдено гостиниц:38</h2>
@@ -96,28 +109,47 @@
         <option value="expensive">Сначала дорогое</option>
       </select>
       <div>
-        <button type="submit">1</button>
-        <button type="submit">2</button>
-        <button type="submit">3</button>
+        <ul>
+          <li>
+            <button type="submit">1</button>
+          </li>
+          <li>
+            <button type="submit">2</button>
+          </li>
+          <li>
+            <button type="submit">3</button>
+          </li>
+        </ul>
       </div>
       <ul>
         <li>
-          <h3>Amara Resort & Spa</h3>
-          <img src="#" alt="Отель Амара">
+          <a href="#">
+            <h3>Amara Resort & Spa</h3>
+          </a>
+          <a href="#"><img src="#" alt="Отель Амара"></a>
         </li>
         <li>
-          <h3>Desert Quail Inn</h3>
-          <img src="#" alt="Отель Десерт">
+          <a href="#">
+            <h3>Desert Quail Inn</h3>
+          </a>
+          <a href="#"><img src="#" alt="Отель Десерт"></a>
         </li>
         <li>
-          <h3>Villas at Poco Diablo</h3>
-          <img src="#" alt="Отель Виласс">
+          <a href="#">
+            <h3>Villas at Poco Diablo</h3>
+          </a>
+          <a href="#"><img src="#" alt="Отель Виласс"></a>
         </li>
         <li>
-          <h3>GreenTree Inn</h3>
-          <img src="#" alt="Отель Гринтрии">
+          <a href="#">
+            <h3>GreenTree Inn</h3>
+          </a>
+          <a href="#"><img src="#" alt="Отель Гринтрии"></a>
         </li>
       </ul>
+      <div>
+        <button type="submit">Загрузить ещё</button>
+      </div>
       <div>
         <ul>
           <li>
@@ -146,7 +178,7 @@
           <option value="number">1</option>
           <option value="number">2</option>
           <option value="number">3</option>
-          <option value="number">4</option>
+          <option value="number" selected>4</option>
         </select>
       </form>
     </section>
