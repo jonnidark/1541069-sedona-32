@@ -33,7 +33,10 @@
   <main>
     <section>
       <h1>Гостиницы Седоны</h1>
-      <p>Гостиницы</p>
+      <ul class="breadcrumb">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
@@ -92,12 +95,8 @@
           <label>
             <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
           </label>
-          <button type="submit">
-            <span> Применить</span>
-          </button>
-          <button type="submit">
-            <span>Сбросить</span>
-          </button>
+          <button type="button">Применить</button>
+          <button type="button">Сбросить</button>
         </fieldset>
       </form>
     </section>
@@ -108,19 +107,17 @@
         <option value="popular">Сначала популярное</option>
         <option value="expensive">Сначала дорогое</option>
       </select>
-      <div>
-        <ul>
-          <li>
-            <button type="submit">1</button>
-          </li>
-          <li>
-            <button type="submit">2</button>
-          </li>
-          <li>
-            <button type="submit">3</button>
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+      </ul>
       <ul>
         <li>
           <a href="#">
@@ -130,8 +127,8 @@
           <p>Гостиница</p>
           <p>От 4000 ₽</p>
           <p>рейтинг:8,5</p>
-          <button type="submit">Подробнее</button>
-          <button type="submit">Избранное</button>
+          <a href="#">Подробнее</a>
+          <button type="button">Избранное</button>
         </li>
         <li>
           <a href="#">
@@ -141,8 +138,8 @@
           <p>Гостиница</p>
           <p>От 3000 ₽</p>
           <p>рейтинг:8,9</p>
-          <button type="submit">Подробнее</button>
-          <button type="submit">Избранное</button>
+          <a href="#">Подробнее</a>
+          <button type="button">Избранное</button>
         </li>
         <li>
           <a href="#">
@@ -152,8 +149,8 @@
           <p>Гостиница</p>
           <p>От 2000 ₽</p>
           <p>рейтинг:9,2</p>
-          <button type="submit">Подробнее</button>
-          <button type="submit">Избранное</button>
+          <a href="#">Подробнее</a>
+          <button type="button">Избранное</button>
         </li>
         <li>
           <a href="#">
@@ -163,13 +160,11 @@
           <p>Гостиница</p>
           <p>От 3000 ₽</p>
           <p>рейтинг:9,2</p>
-          <button type="submit">Подробнее</button>
-          <button type="submit">Избранное</button>
+          <a href="#">Подробнее</a>
+          <button type="button">Избранное</button>
         </li>
       </ul>
-      <div>
-        <button type="submit">Загрузить ещё</button>
-      </div>
+      <button type="button">Загрузить ещё</button>
       <div>
         <ul>
           <li>
