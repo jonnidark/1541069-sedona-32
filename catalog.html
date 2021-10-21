@@ -4,34 +4,35 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="index.html">
+    <nav class="navigation">
+      <a class="navigation-link" href="index.html">
         <img src="img/logo.svg" width="140" height="70" alt="логотип Седона">
       </a>
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О седоне</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a class="navigation-link" href="#">Главная</a></li>
+        <li><a class="navigation-link" href="#">О седоне</a></li>
+        <li><a class="navigation-link" href="#">Гостиницы</a></li>
       </ul>
       <ul>
         <li>
-          <a href="#"><img src="img/searh.svg" width="20" height="20" alt="Поиск"></a>
+          <a class="navigation-link" href="#"><img src="img/searh.svg" width="20" height="20" alt="Поиск"></a>
         </li>
         <li>
-          <a href="#"><img src="img/favorites.svg" width="20" height="20" alt="Избранное"></a>
+          <a class="navigation-link" href="#"><img src="img/favorites.svg" width="20" height="20" alt="Избранное"></a>
         </li>
         <li>
-          <a href="#"><span>Хочу сюда!</span></a>
+          <a class="navigation-link item" href="#"><span>Хочу сюда!</span></a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
+    <section class="catalog-header-background-picture">
       <h1>Гостиницы Седоны</h1>
       <ul class="breadcrumb">
         <li><a href="index.html"><img src="img/breadcrumb.svg" width="5" height="5" alt="переход на главную"></a></li>
@@ -95,8 +96,8 @@
           <label>
             <input type="range" min="1" max="5" id="size" oninput="sizePic()" value="3">
           </label>
-          <button type="button">Применить</button>
-          <button type="button">Сбросить</button>
+          <button class="button" type="button">Применить</button>
+          <button class="button" type="button">Сбросить</button>
         </fieldset>
       </form>
     </section>
@@ -223,7 +224,7 @@
       </form>
     </section>
     <section>
-      <h2>соц-сети</h2>
+      <h2 class="visal-hidden">соц-сети</h2>
       <ul>
         <li><a href="https://twitter.com/"><img src="img/logo-twiter.svg" width="45" height="20" alt="twiter"></a></li>
         <li><a href="https://www.facebook.com/"><img src="img/logo-facebook.svg" width="45" height="20"

@@ -4,37 +4,38 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="#"><img src="img/logo.svg" width="140" height="70" alt="лого"></a>
+    <nav class="navigation">
+      <a class="navigation-link" href="#"><img src="img/logo.svg" width="140" height="70" alt="лого"></a>
       <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О седоне</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+        <li><a class="navigation-link" href="#">Главная</a></li>
+        <li><a class="navigation-link" href="#">О седоне</a></li>
+        <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
       </ul>
       <ul>
         <li>
-          <a href="#"><img src="img/searh.svg" width="20" height="20" alt="Поиск"></a>
+          <a class="navigation-link" href="#"><img src="img/searh.svg" width="20" height="20" alt="Поиск"></a>
         </li>
         <li>
-          <a href="#"><img src="img/favorites.svg" width="20" height="20" alt="Избранное"></a>
+          <a class="navigation-link" href="#"><img src="img/favorites.svg" width="20" height="20" alt="Избранное"></a>
         </li>
         <li>
-          <a href="#"><span>Хочу сюда!</span></a>
+          <a class="navigation-link item" href="#"><span>Хочу сюда!</span></a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
-      <img src="img/welcome.svg" width="460" height="355" alt="Добро пожаловать!">
+      <img class="picture" src="img/welcome.svg" width="460" height="355" alt="Добро пожаловать!">
       <h1>Cедона-небольшой городок в аризоне,заслуживающий большего!</h1>
       <h2>Рассмотрим 5 причин, по которым Седона круче,чем Гранд-Каньон!</h2>
     </section>
-    <section>
+    <section class="container">
       <img src="img/photo-1.jpg" width="800" height="385" alt="настоящий гордок">
       <h2>настоящий городок</h2>
       <p>-№1-</p>
@@ -42,7 +43,7 @@
     </section>
     <section>
       <ul>
-        <li>
+        <li class="main-item">
           <h3>жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
         </li>
@@ -50,13 +51,13 @@
           <h3>еда</h3>
           <p>Всегда заказывайте топовый фирменный бургер,вы не разачаруетесь!</p>
         </li>
-        <li>
+        <li class="main-item">
           <h3>сувениры</h3>
           <p>Не только китайского,но и настоящего местного производства!</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="container">
       <img src="img/photo-2.jpg" width="800" height="385" alt="Мост дьявола">
       <h2>там есть мост дьявола</h2>
       <p>-№2-</p>
@@ -64,17 +65,17 @@
     </section>
     <section>
       <ul>
-        <li>
+        <li class="main-item">
           <h3>небольшая площадь</h3>
           <p>-№3-</p>
           <p>Все достопримечательности находятся очень близко </p>
         </li>
-        <li>
+        <li class="main-medim-item">
           <h3>красивая дорога</h3>
           <p>-№4-</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li>
+        <li class="main-item">
           <h3>мало туристов</h3>
           <p>-№5-</p>
           <p>Большинство едет в Гранд Каньон и толпится там </p>
@@ -86,18 +87,18 @@
     <section>
       <h2>заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-      <a href="#">Поиск гостиницы в седоне</a>
+      <a class="item" href="#">Поиск гостиницы в седоне</a>
     </section>
-    <section>
+    <section class="footer-background-picture">
       <h2>подпишись на рассылку </h2>
       <p>Только полезная информация и никакого спама,честное бойскаутское!</p>
       <form action="https://htmlacademy.ru" method="post">
         <input type="email" placeholder="Ваш e-mail" />
       </form>
-      <button type="submit">подписаться</button>
+      <button class="button" type="submit">подписаться</button>
     </section>
     <section>
-      <h2>соц-сети</h2>
+      <h2 class="visal-hidden">соц-сети</h2>
       <ul>
         <li><a href="https://twitter.com/"><img src="img/logo-twiter.svg" width="45" height="20" alt="лого twiter"></a>
         </li>
