@@ -78,6 +78,12 @@ text-transform: uppercase;
     color: #ffffff;
     background: #756257;
     border-radius: 4px; 
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none;
+    
 }
 
 .picture{
@@ -129,4 +135,46 @@ text-transform: uppercase;
     color: #000000;
     width: 400px;
     height: 385px;
+}
+
+.footer-number {
+font-family: "PT Sans";
+line-height: 22px;
+font-weight: 700;
+text-align: center;
+color: #000000;
+text-decoration: none;
+text-transform: uppercase; 
+}
+
+.item-footer {
+    text-decoration: none;
+}
+
+.hostel-item {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+.list-item {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+
+.main-list-item {
+    background: #83B3D3;
+}
+
+.button-vilas {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background: #7DB54F;
+    text-decoration: none;
+    text-transform: uppercase; 
 }
